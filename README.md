@@ -1,5 +1,5 @@
 # Validated-cSES-measures-in-HRS
-Includes all the code (SAS and Mplus) to create the validated measures of childhood socio-economic status presented in our Plos One (2017) paper: Validation of a theoretically motivated approach to measuring childhood socioeconomic circumstances in the Health and Retirement Study. 
+Includes all the code (SAS and Mplus) to create the validated measures of childhood socio-economic status presented in our Plos One (2017) paper: Validation of a theoretically motivated approach to measuring childhood socioeconomic circumstances in the Health and Retirement Study: https://doi.org/10.1371/journal.pone.0185898
 
 We created 8 seperate files in this analysis: 6 files to create the measures (2 in SAS 4 in Mplus), 1 file to validate the measures (SAS), and 1 file to compare the measures to other comprehenisve operationalizations created from HRS data (1 file).  
 
