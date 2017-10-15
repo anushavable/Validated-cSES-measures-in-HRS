@@ -19,20 +19,6 @@
 
 /* Libname statements for the location of your data */ 
 
-%let drivename = Z:\Dropbox; * Anusha;
-*%let drivename= C:\Users\Paoventure\Dropbox;
-
-run;
-
-libname rawdata "&drivename.\HRSPublicUseData\HRSRawData\RAND";
-libname rawexit "&drivename.\HRSPublicUseData\HRSRawData\Exits";
-libname rawcore "&drivename.\HRSPublicUseData\HRSRawData\Core";
-libname hrsclean "&drivename.\HRSPublicUseData\HRSCleanData";
-libname CDI "&drivename.\Research Projects\Childhood SES in HRS";
-libname created "&drivename.\HRS created data sets";
-libname net 	"&drivename.\HRSPublicUseData\Internet Surveys";	* libname for internet surveys; 
-*libname FS "&drivename.\Childhood SES in HRS\Paola\Finalized Outcome documentation";
-
 
 /* Variable Lists for Importation */ 
 %let varlist_rand = 
