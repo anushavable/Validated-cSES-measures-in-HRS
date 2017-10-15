@@ -1,0 +1,36 @@
+Title: Exploratory factor analysis for the financial capital scale
+; 
+ 
+Data:
+   
+
+ File is !statements for the location of your data /datasetname.dat ;
+
+
+
+
+
+Variable:
+   
+   Names are  bothpare    steppare    m_atten     m_effort    m_life      
+              focc_cat    famses2     famses      finmove     finhelp
+              f_work      f_absent    
+nomom       m_work      gramps
+              HHIDPN2  ;
+
+   Missing are . ;
+
+
+  USEVARIABLES ARE
+
+    focc_cat f_work  famses finhelp finmove  
+        ;
+
+  CATEGORICAL ARE
+     focc_cat f_work  famses finhelp finmove       
+     ;
+
+  analysis:  type = efa 1 4;
+  iterations = 100000;
+  COVERAGE = 0.01;
+  plot: type = plot2;

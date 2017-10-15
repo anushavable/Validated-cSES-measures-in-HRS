@@ -1,0 +1,44 @@
+Title: File 03a (Mplus) performs the exploratory factor analysis for the social capital scale
+;
+
+Data:
+   
+File is !statements for the location of your data /datasetname.dat ;
+
+
+Variable:
+   
+Names are     bothpare    steppare    
+              m_atten     m_effort    m_life 
+	     focc_cat    
+ famses2     famses
+	     finmove      finhelp     f_work
+	     f_absent    
+ nomom       m_work
+	     gramps       HHIDPN2  ;  
+
+
+USEVARIABLES ARE
+          steppare        
+          m_life   
+          m_effort 
+          m_atten
+          nomom
+           ;
+
+CATEGORICAL ARE
+          steppare        
+          m_life   
+          m_effort 
+          m_atten
+          nomom
+          ;
+
+MISSING ARE . ;
+
+      analysis:  type = efa 1 3; 
+      iterations = 100000;
+      COVERAGE = 0.001;
+      plot: type = plot2; 
+
+
